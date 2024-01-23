@@ -72,7 +72,7 @@ if (isset($_POST['submit'])) {
 
                 if (mysqli_stmt_execute($stmt)) {
                     // Set a success message in the session
-                    $_SESSION['success_message'] = "Data successfully updated.";
+                    // $_SESSION['success_message'] = "Data successfully updated.";
                 
                     // Display a JavaScript alert after the data is updated
                     echo '<script>alert("Data has been updated successfully.");</script>';
@@ -102,7 +102,7 @@ if (isset($_POST['submit'])) {
 
             if (mysqli_stmt_execute($stmt)) {
                 // Set a success message in the session
-                $_SESSION['success_message'] = "Data successfully updated.";
+                // $_SESSION['success_message'] = "Data successfully updated.";
             
                 // Display a JavaScript alert after the data is updated
                 echo '<script>alert("Data has been updated successfully.");</script>';
@@ -135,7 +135,7 @@ if (isset($_POST['submit'])) {
             $_SESSION['success_message'] = "Data successfully updated.";
             // Display a JavaScript alert after the data is updated
             echo '<script>alert("Data has been updated.");</script>';
-            header("Location: userdashboard.php");
+            header("Location: /final/user/userdashboard.php");
             exit;
         } else {
             // Display the error message if the update query fails

@@ -10,7 +10,7 @@ if (!isset($_SESSION['id'])) {
 }
 
 if (isset($_SESSION['success_message'])) {
-    echo '<script>alert("' . $_SESSION['success_message'] . '");</script>';
+    // echo '<script>alert("' . $_SESSION['success_message'] . '");</script>';
     unset($_SESSION['success_message']); // Clear the success message from the session
 }
 
@@ -43,7 +43,7 @@ if (isset($_POST['submit'])) {
             // Collection date has been changed by the user
             if ($daysDifference < 90) {
                 // Collection date is not 90 days ago
-             echo '<script>window.location.href = "donateblood.php";</script>';
+            //  echo '<script>window.location.href = "donateblood.php";</script>';
              echo '<script>window.location.href = "donateblood.php";</script>';
              exit;
                
@@ -55,7 +55,7 @@ if (isset($_POST['submit'])) {
             
                 if (mysqli_stmt_execute($stmt)) {
                     // Set a success message in the session
-                    $_SESSION['success_message'] = "Data successfully updated.";
+                    // $_SESSION['success_message'] = "Data successfully updated.";
                     // Redirect the user after the data is updated
                     header("Location: donatenow.php");
                     exit;
@@ -76,7 +76,7 @@ if (isset($_POST['submit'])) {
 
             if (mysqli_stmt_execute($stmt)) {
                 // Set a success message in the session
-                $_SESSION['success_message'] = "Data successfully updated.";
+                // $_SESSION['success_message'] = "Data successfully updated.";
                 // Display a JavaScript alert after the data is updated
                 header("Location: donatenow.php");
                 exit;
@@ -96,10 +96,11 @@ if (isset($_POST['submit'])) {
 
         if (mysqli_stmt_execute($stmt)) {
             // Set a success message in the session
-            $_SESSION['success_message'] = "Data successfully updated.";
+            // $_SESSION['success_message'] = "Data successfully updated.";
             // Display a JavaScript alert after the data is updated
-            echo '<script>alert("Data has been updated.");</script>';
-            header("Location:/final/user/userdashboard.php");
+            // echo '<script>alert("Data has been updated.");</script>';
+           header("Location: /final/user/userdashboard.php");
+
             exit;
         } else {
             // Display the error message if the update query fails

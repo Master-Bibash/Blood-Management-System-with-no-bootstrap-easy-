@@ -247,10 +247,9 @@ $lastDonationDate = $row['collection']; // Assuming 'collection' is the name of 
                               </div>
                               <div class="form-group">
                                    <label>Collection Date</label>
-                                   <input class="form-control" type="date" name="collection"
-                                                            id="collectionDate"
-                                                            value="<?php echo $row['collection']; ?>" required>
-                                                       <span id="dateErrorMessage" style="color: red;"></span>
+                                   <input class="form-control" type="date" name="collection" id="collectionDate"
+                                        value="<?php echo $row['collection']; ?>" required>
+                                   <span id="dateErrorMessage" style="color: red;"></span>
                               </div>
 
                               <div class="form-group">
@@ -267,7 +266,7 @@ $lastDonationDate = $row['collection']; // Assuming 'collection' is the name of 
                               </div>
 
                               <button type="submit" class="btn btn-success" name="submit"
-                                                       id="submitButton">Submit</button>
+                                   id="submitButton">Submit</button>
                          </div>
                     </form>
                </div>
@@ -279,52 +278,52 @@ include 'footer.php';
 ?>
      </section>
      <script>
-const collectionDateInput = document.getElementById("collectionDate");
-const dateErrorMessage = document.getElementById("dateErrorMessage");
-const submitButton = document.getElementById("submitButton");
-const previousCollectionDate = "<?php echo $lastDonationDate; ?>";
+     const collectionDateInput = document.getElementById("collectionDate");
+     const dateErrorMessage = document.getElementById("dateErrorMessage");
+     const submitButton = document.getElementById("submitButton");
+     const previousCollectionDate = "<?php echo $lastDonationDate; ?>";
 
-collectionDateInput.addEventListener("change", function() {
-    const newCollectionDate = this.value;
+     collectionDateInput.addEventListener("change", function() {
+          const newCollectionDate = this.value;
 
-    // Check if the newCollectionDate is not empty (null or empty string)
-    if (newCollectionDate.trim() !== '') {
-        const ninetyDaysAgo = new Date();
-        ninetyDaysAgo.setDate(ninetyDaysAgo.getDate() - 90);
-        const inputtedDate = new Date(newCollectionDate);
+          // Check if the newCollectionDate is not empty (null or empty string)
+          if (newCollectionDate.trim() !== '') {
+               const ninetyDaysAgo = new Date();
+               ninetyDaysAgo.setDate(ninetyDaysAgo.getDate() - 90);
+               const inputtedDate = new Date(newCollectionDate);
 
-        // Check if the previousCollectionDate is not empty (null or empty string)
-        if (previousCollectionDate.trim() !== '') {
-            const lastDonationDate = new Date(previousCollectionDate);
-            if (inputtedDate >= lastDonationDate) {
-                dateErrorMessage.textContent =
-                    "You must wait at least 90 days between blood donations.";
-                this.value = previousCollectionDate;
-                submitButton.disabled = true;
-                submitButton.style.backgroundColor = "#ccc"; // Change button color
-                submitButton.style.cursor = "not-allowed"; // Change cursor
-            } else {
-                dateErrorMessage.textContent = "";
-                submitButton.disabled = false;
-                submitButton.style.backgroundColor = ""; // Reset button color
-                submitButton.style.cursor = ""; // Reset cursor
-            }
-        } else {
-            dateErrorMessage.textContent = "";
-            submitButton.disabled = false;
-            submitButton.style.backgroundColor = ""; // Reset button color
-            submitButton.style.cursor = ""; // Reset cursor
-        }
-    } else {
-        dateErrorMessage.textContent = "";
-        submitButton.disabled = false;
-        submitButton.style.backgroundColor = ""; // Reset button color
-        submitButton.style.cursor = ""; // Reset cursor
-    }
-});
-</script>
+               // Check if the previousCollectionDate is not empty (null or empty string)
+               if (previousCollectionDate.trim() !== '') {
+                    const lastDonationDate = new Date(previousCollectionDate);
+                    if (inputtedDate >= lastDonationDate) {
+                         dateErrorMessage.textContent =
+                              "You must wait at least 90 days between blood donations.";
+                         this.value = previousCollectionDate;
+                         submitButton.disabled = true;
+                         submitButton.style.backgroundColor = "#ccc"; // Change button color
+                         submitButton.style.cursor = "not-allowed"; // Change cursor
+                    } else {
+                         dateErrorMessage.textContent = "";
+                         submitButton.disabled = false;
+                         submitButton.style.backgroundColor = ""; // Reset button color
+                         submitButton.style.cursor = ""; // Reset cursor
+                    }
+               } else {
+                    dateErrorMessage.textContent = "";
+                    submitButton.disabled = false;
+                    submitButton.style.backgroundColor = ""; // Reset button color
+                    submitButton.style.cursor = ""; // Reset cursor
+               }
+          } else {
+               dateErrorMessage.textContent = "";
+               submitButton.disabled = false;
+               submitButton.style.backgroundColor = ""; // Reset button color
+               submitButton.style.cursor = ""; // Reset cursor
+          }
+     });
+     </script>
 
-    
+
 </body>
 
 </html>
