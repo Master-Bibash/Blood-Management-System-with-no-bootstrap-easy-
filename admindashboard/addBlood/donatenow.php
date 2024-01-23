@@ -185,7 +185,7 @@ if (!isset($_SESSION['user_id'])) {
                     <div class="upper">
                          <div class="upper-f">
                               <i class='bx bx-menu'></i>
-                              <span class="text">Blood Management System</span>
+                              <span class="text">Blood  Donation Management System</span>
                          </div>
                          <div class="uppfer-s">
                               <div class="profile_name" style="

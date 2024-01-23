@@ -24,41 +24,41 @@ if (!isset($_SESSION['user_id'])) {
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <style>
-     .upper {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-     }
+.upper {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
 
-     .upper-f {
+.upper-f {
 
-          display: flex;
-          flex-direction: row;
-          align-items: inherit;
+     display: flex;
+     flex-direction: row;
+     align-items: inherit;
 
 
-     }
+}
 
-     .profile_name {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-around;
-          font-family: 'Poppins', sans-serif;
-          color: #eef3f7;
-     }
+.profile_name {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     font-family: 'Poppins', sans-serif;
+     color: #eef3f7;
+}
 
-     .profile_name p {
-          margin-right: 10px;
-          font-family: 'Poppins', sans-serif;
-          color: #eef3f7;
-     }
+.profile_name p {
+     margin-right: 10px;
+     font-family: 'Poppins', sans-serif;
+     color: #eef3f7;
+}
 
-     .profile_name i {
-          margin-right: 10px;
-          font-family: 'Poppins', sans-serif;
-          color: #eef3f7;
-          cursor: pointer;
-     }
+.profile_name i {
+     margin-right: 10px;
+     font-family: 'Poppins', sans-serif;
+     color: #eef3f7;
+     cursor: pointer;
+}
 </style>
 <script>
 
@@ -188,14 +188,16 @@ if (!isset($_SESSION['user_id'])) {
                     <div class="upper">
                          <div class="upper-f">
                               <i class='bx bx-menu'></i>
-                              <span class="text">Blood Management System</span>
+                              <span class="text">Blood  Donation Management System</span>
                          </div>
                          <div class="uppfer-s">
 
                               <div class="profile_name" style="
                
                 align-items: center;">
-                                <a href="userfeed.php"> <box-icon name='notification' animation='flashing' ></box-icon></a>
+                                   <a href="userfeed.php">
+                                        <box-icon name='notification' animation='flashing'></box-icon>
+                                   </a>
                                    <p style="
                                    margin-left: 13px;">Welcome
                                         Admin
@@ -227,20 +229,20 @@ if (!isset($_SESSION['user_id'])) {
      </section>
 
      <script>
-          let arrow = document.querySelectorAll(".arrow");
-          for (var i = 0; i < arrow.length; i++) {
-               arrow[i].addEventListener("click", (e) => {
-                    let arrowParent = e.target.parentElement.parentElement; //selecting main parent of arrow
-                    arrowParent.classList.toggle("showMenu");
-               });
-          }
-
-          let sidebar = document.querySelector(".sidebar");
-          let sidebarBtn = document.querySelector(".bx-menu");
-          console.log(sidebarBtn);
-          sidebarBtn.addEventListener("click", () => {
-               sidebar.classList.toggle("close");
+     let arrow = document.querySelectorAll(".arrow");
+     for (var i = 0; i < arrow.length; i++) {
+          arrow[i].addEventListener("click", (e) => {
+               let arrowParent = e.target.parentElement.parentElement; //selecting main parent of arrow
+               arrowParent.classList.toggle("showMenu");
           });
+     }
+
+     let sidebar = document.querySelector(".sidebar");
+     let sidebarBtn = document.querySelector(".bx-menu");
+     console.log(sidebarBtn);
+     sidebarBtn.addEventListener("click", () => {
+          sidebar.classList.toggle("close");
+     });
      </script>
 
 </body>

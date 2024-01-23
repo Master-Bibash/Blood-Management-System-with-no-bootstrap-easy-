@@ -93,8 +93,8 @@
 <body>
 <footer>
         <div class="footer-content">
-            <h3>Blood Management System</h3>
-            <p>This is a project made by BCA fourth semester, which is a blood management system</p>
+            <h3>Blood  Donation Management System</h3>
+            <p>This is a project made by BCA fourth semester, which is a blood  Management system</p>
             <ul class="socials">
                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>

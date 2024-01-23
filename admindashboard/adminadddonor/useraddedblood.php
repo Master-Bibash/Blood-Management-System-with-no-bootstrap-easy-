@@ -35,9 +35,9 @@ if (isset($_POST['submit'])) {
 
     // Check if the collection date is not null and is not the same as the previous one
     if ($previousCollectionDate !== null) {
-        $lastDonationDate = new DateTime($previousCollectionDate);
+        $lastDate = new DateTime($previousCollectionDate);
         $today = new DateTime();
-        $daysDifference = $today->diff($lastDonationDate)->days;
+        $daysDifference = $today->diff($lastDate)->days;
 
         if ($collection !== $previousCollectionDate) {
             // Collection date has been changed by the user

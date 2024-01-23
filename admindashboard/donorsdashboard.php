@@ -3,7 +3,7 @@
 
 <head>
      <meta charset="UTF-8">
-     <title> Blood Management System </title>
+     <title> Blood  Management System</title>
      <link rel="stylesheet" href="Sidebarstyle.css">
      <!-- Boxiocns CDN Link -->
      <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
@@ -52,7 +52,8 @@
                </div>
                <div class="second">
                     <div class="second_one">
-                         <a href="/Final/admindashboard/adminviewblood/viewblood.php" style="text-decoration:none;text-decoration:none;color: black;">View available blood
+                         <a href="/Final/admindashboard/adminviewblood/viewblood.php"
+                              style="text-decoration:none;text-decoration:none;color: black;">View available blood
                               details</a>
                     </div>
                     <div class="second_two">
@@ -100,7 +101,8 @@
                </div>
                <div class="second">
                     <div class="second_one">
-                         <a href="/Final/admindashboard/campaigns/view/viewblood.php" style="text-decoration:none;text-decoration:none;color: #337ab7;">View available
+                         <a href="/Final/admindashboard/campaigns/view/viewblood.php"
+                              style="text-decoration:none;text-decoration:none;color: #337ab7;">View available
                               campaigns</a>
                     </div>
                     <div class="second_two">
@@ -146,7 +148,8 @@
                </div>
                <div class="second">
                     <div class="second_one" style="color: rebeccapurple;">
-                         <a href="/Final/admindashboard/adminannouncement/viewannouncement/viewblood.php" style="text-decoration:none;;text-decoration:none;color: #337ab7;">View announcement
+                         <a href="/Final/admindashboard/adminannouncement/viewannouncement/viewblood.php"
+                              style="text-decoration:none;;text-decoration:none;color: #337ab7;">View announcement
                               details</a>
                     </div>
                     <div class="second_two">
@@ -168,8 +171,9 @@
                </div>
                <div class="second">
                     <div class="second_one" style="color: #d9534f;">
-                         <a href="/Final/admindashboard/addBlood/donatenow.php"
-                              style="text-decoration: none; margin-left: 2px;;text-decoration:none;color: #e80a0a;">Donate Blood</a>
+                         <a href="/Final/all%20logins/signUp.html"
+                              style="text-decoration: none; margin-left: 2px;;text-decoration:none;color: #e80a0a;">Donate
+                              Blood</a>
                     </div>
                     <div class="second_two">
                          <i class='bx bx-chevron-right'></i>
@@ -185,7 +189,7 @@
                     <p> Why Donate blood?</p>
                </div>
                <div class="info-on">
-                    <p> Blood donation merits include saving <br>lives,
+                    <p> Blood  merits include saving <br>lives,
                          improving donor health,<br> fostering community responsibility,<br> emergency preparedness,
                          supporting<br> chronic illnesses, advancing medical research,<br> maintaining blood supplies,
                          <br>promoting awareness,<br> and enhancing the donor's well-being.

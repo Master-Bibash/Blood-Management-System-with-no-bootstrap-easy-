@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title> Blood Management System </title>
+  <title> Blood   Management Systemt Systemt Systemt Systemt Systemt Systemt Systemt Systemt Systemt Systemt Systemt Systemt Systemt Systemt Systemt Systemt Systemt Systemt Systemt Systemt Systemt Systemt Systemt Systemt Systemt Systemt Systemt Systemt Systemt Systemt Systemt Systemt Systemt Systemt Systemt Systemt System</title>
   <link rel="stylesheet" href="Sidebarstyle.css">
   <!-- Boxiocns CDN Link -->
   <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
@@ -137,7 +137,7 @@
     <div class="home-content">
       <div class="header">
         <i class='bx bx-menu'></i>
-        <span class="text">Blood Management System</span>
+        <span class="text">Blood  Donation Management System</span>
       </div>
      
     <table class="customers" style="

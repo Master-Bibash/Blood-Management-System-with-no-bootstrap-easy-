@@ -39,7 +39,7 @@ if (isset($_SESSION['success_message'])) {
 
 <head>
      <meta charset="UTF-8">
-     <title> Blood Management System </title>
+     <title> Blood   Management System</title>
      <link rel="stylesheet" href="Sidebarstyle.css">
      <!-- Boxiocns CDN Link -->
      <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
@@ -228,7 +228,7 @@ if (isset($_SESSION['success_message'])) {
                     <p> Why Donate blood?</p>
                </div>
                <div class="info-on">
-                    <p> Blood donation merits include saving <br>lives,
+                    <p> Blood  merits include saving <br>lives,
                          improving donor health,<br> fostering community responsibility,<br> emergency preparedness,
                          supporting<br> chronic illnesses, advancing medical research,<br> maintaining blood supplies,
                          <br>promoting awareness,<br> and enhancing the donor's well-being.

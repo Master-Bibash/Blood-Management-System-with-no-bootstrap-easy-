@@ -21,10 +21,10 @@
   transition: all 0.5s ease;
 }
 
-.text{
+.text {
   font-family: 'Poppins';
-    font-style: unset;
-    font-weight: bolder;
+  font-style: unset;
+  font-weight: bolder;
   font-size: 25px;
   font-weight: 600;
   color: white;
@@ -326,7 +326,8 @@
 
 .home-section {
   position: relative;
-  background: #ff0000;  ;
+  background: #ff0000;
+  ;
   height: 10vh;
   left: 260px;
   width: calc(100% - 260px);
@@ -381,10 +382,10 @@
 }
 
 .Donors {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 14px;
-    line-height: 1.42857143;
-    color: #333;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
   margin-top: 35px;
   margin-bottom: 20px;
   font-size: 20px;
@@ -411,7 +412,7 @@
   background-color: #5cb85c;
   border-radius: 8px;
   flex-wrap: wrap;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
 }
@@ -458,12 +459,13 @@
   padding: 11px 4px 3px 4px;
   border-bottom-left-radius: inherit;
   border-bottom-right-radius: inherit;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
 }
-.second .second_one{
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+
+.second .second_one {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: green;
@@ -471,7 +473,7 @@
 
 .item-2 .second_one {
 
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #337ab7;
@@ -504,6 +506,7 @@
   border-radius: 8px;
   flex-wrap: wrap;
 }
+
 .item-4 {
   box-shadow: -30px 30px 20px rgba(0, 0, 0, 0.3);
   margin: 10px 8px;
@@ -514,93 +517,102 @@
   border-radius: 8px;
 
 }
-.one img{
+
+.one img {
   width: 92px;
 }
 
-.third{
+.third {
   padding-right: 5px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  }
-  .third .third-one {
-    padding-left: 48px;
-    color: white;
-    font-size: 32px;
-  }
-  .third .third_two{
-    font-size: 18px;
-    color: white;
-    margin-left: auto;
-  }
-  .info-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    background-color: antiquewhite;
-    width: 100%;
-    padding: 10px;
-  }
-  
-  .info-container .info-o {
-    width: 54%;
-    font-size: 28px;
-    font-family: auto;
-    font-style: revert;
-    font-weight: 500;
-    color: black;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .info-container .info-one .info-on {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-  }
-  
-  .info-container .info-one .info-on p {
-    font-weight: 100;
-    color: black;
-  }
-  
-  .info-container .info-two {
-    flex: 1;
-  }
-  
-  .info-container .info-two img {
-    width: 100%;
-    height: auto;
+}
 
-  }
+.third .third-one {
+  padding-left: 48px;
+  color: white;
+  font-size: 32px;
+}
+
+.third .third_two {
+  font-size: 18px;
+  color: white;
+  margin-left: auto;
+}
+
+.info-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: antiquewhite;
+  width: 100%;
+  padding: 10px;
+}
+
+.info-container .info-o {
+  width: 54%;
+  font-size: 28px;
+  font-family: auto;
+  font-style: revert;
+  font-weight: 500;
+  color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+.info-container .info-one .info-on {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.info-container .info-one .info-on p {
+  font-weight: 100;
+  color: black;
+}
+
+.info-container .info-two {
+  flex: 1;
+}
+
+.info-container .info-two img {
+  width: 100%;
+  height: auto;
+
+}
+
 /* 
 table shit */
 
-.table-content{
+.table-content {
   margin-left: 20%;
   margin-top: 30px;
-position: relative;
-max-width: 800px;
-width: 100%;
-background: #fff;
-padding: 25px;
-border-radius: 8px;
-box-shadow:0 0 15px rgba(4, 6, 10, 16.1)
+  position: relative;
+  max-width: 800px;
+  width: 100%;
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(4, 6, 10, 16.1)
 }
-.table-content #bloodDonationForm{
+
+.table-content #bloodForm {
   margin-top: 30px;
 }
-#bloodDonationForm .form-group{
+
+#bloodForm .form-group {
   width: 100%;
   margin-top: 20px;
 
 }
-.form-group label{
+
+.form-group label {
   color: #333;
 }
-#bloodDonationForm :where(.form-group input,.form-control){
+
+#bloodForm :where(.form-group input, .form-control) {
   position: relative;
   height: 50px;
   width: 100%;
@@ -612,10 +624,12 @@ box-shadow:0 0 15px rgba(4, 6, 10, 16.1)
   border-radius: 6px;
   padding: 0 15px;
 }
-.form-group input:focus{
+
+.form-group input:focus {
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
 }
-#bloodDonationForm button{
+
+#bloodForm button {
   height: 55px;
   width: 100%;
   color: #fff;
@@ -627,6 +641,7 @@ box-shadow:0 0 15px rgba(4, 6, 10, 16.1)
   transition: all 0.2s ease;
   background: rgba(130, 106, 251);
 }
-#bloodDonationForm button:hover{
-  background: rgb(88, 56,250);
+
+#bloodForm button:hover {
+  background: rgb(88, 56, 250);
 }

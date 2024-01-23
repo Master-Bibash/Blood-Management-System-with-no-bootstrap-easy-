@@ -54,15 +54,15 @@ if (isset($_POST['submit'])) {
 
     // Check if the collection date is not null and is not the same as the previous one
     if ($previousCollectionDate !== null) {
-        $lastDonationDate = new DateTime($previousCollectionDate);
+        $lastDate = new DateTime($previousCollectionDate);
         $today = new DateTime();
-        $daysDifference = $today->diff($lastDonationDate)->days;
+        $daysDifference = $today->diff($lastDate)->days;
 
         if ($collection !== $previousCollectionDate) {
             // Collection date has been changed by the user
             if ($daysDifference < 90) {
                 // Collection date is not 90 days ago
-                echo '<script>alert("You must wait at least 90 days between blood donations.");</script>';
+                echo '<script>alert("You must wait at least 90 days between blood s.");</script>';
             
             } else {
                 // Allow updating other fields including collection date

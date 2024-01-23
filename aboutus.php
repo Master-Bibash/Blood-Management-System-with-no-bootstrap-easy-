@@ -18,7 +18,7 @@
           <div class="home-content">
                <div class="header">
                     <i class='bx bx-menu'></i>
-                    <span class="text">Blood Management System</span>
+                    <span class="text">Blood Donation Management System</span>
 
                     <div class="heading">
                          <h1>About Us</h1>
@@ -31,8 +31,8 @@
                               <h2>About us </h2>
                               <p>
                                    Welcome to Blood Management System, where we are committed to transforming lives
-                                   through the act of blood donation. Our journey began in 2023 with a mission to make
-                                   blood donations more accessible and, in doing so, save lives. We understand the
+                                   through the act of blood . Our journey began in 2023 with a mission to make
+                                   blood s more accessible and, in doing so, save lives. We understand the
                                    critical need for blood in medical emergencies and aim to bridge the gap between
                                    donors and recipients. Our platform not only enables individuals to donate blood but
                                    also keeps you informed about ongoing blood projects and campaigns in your area. We

@@ -41,7 +41,7 @@ if (mysqli_num_rows($result) == 0) {
     exit;
 }
 
-$lastDonationDate = $row['collection']; // Assuming 'collection' is the name of the column in the database
+$lastDate = $row['collection']; // Assuming 'collection' is the name of the column in the database
 
 ?>
 
@@ -52,7 +52,7 @@ $lastDonationDate = $row['collection']; // Assuming 'collection' is the name of 
 
 <head>
      <meta charset="UTF-8">
-     <title> Blood Management System </title>
+     <title> Blood   Management System</title>
      <link rel="stylesheet" href="Sidebarstyle.css">
      <!-- Boxiocns CDN Link -->
      <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
@@ -174,7 +174,7 @@ $lastDonationDate = $row['collection']; // Assuming 'collection' is the name of 
                     <div class="upper">
                          <div class="upper-f">
                               <i class='bx bx-menu'></i>
-                              <span class="text">Blood Management System</span>
+                              <span class="text">Blood  Donation Management System</span>
                          </div>
                          <div class="uppfer-s">
                               <div class="profile_name" style="
@@ -200,8 +200,8 @@ $lastDonationDate = $row['collection']; // Assuming 'collection' is the name of 
                               </div>
                          </div>
                     </div>
-                    <h1>k cha </h1>
-                    <form action="useraddedblood.php" method="POST" id="bloodDonationForm">
+                    <h1> </h1>
+                    <form action="useraddedblood.php" method="POST" id="bloodForm">
 
                          <div class="main-user-info">
                               <div class="form-group">
@@ -281,7 +281,7 @@ include 'footer.php';
      const collectionDateInput = document.getElementById("collectionDate");
      const dateErrorMessage = document.getElementById("dateErrorMessage");
      const submitButton = document.getElementById("submitButton");
-     const previousCollectionDate = "<?php echo $lastDonationDate; ?>";
+     const previousCollectionDate = "<?php echo $lastDate; ?>";
 
      collectionDateInput.addEventListener("change", function() {
           const newCollectionDate = this.value;
@@ -294,10 +294,10 @@ include 'footer.php';
 
                // Check if the previousCollectionDate is not empty (null or empty string)
                if (previousCollectionDate.trim() !== '') {
-                    const lastDonationDate = new Date(previousCollectionDate);
-                    if (inputtedDate >= lastDonationDate) {
+                    const lastDate = new Date(previousCollectionDate);
+                    if (inputtedDate >= lastDate) {
                          dateErrorMessage.textContent =
-                              "You must wait at least 90 days between blood donations.";
+                              "You must wait at least 90 days between blood s.";
                          this.value = previousCollectionDate;
                          submitButton.disabled = true;
                          submitButton.style.backgroundColor = "#ccc"; // Change button color
