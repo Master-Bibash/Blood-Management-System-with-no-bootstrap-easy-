@@ -3,7 +3,7 @@
 
 <head>
      <meta charset="UTF-8">
-     <title> Blood   Management System</title>
+     <title> Blood Management System</title>
      <link rel="stylesheet" href="Sidebarstyle.css">
      <!-- Boxiocns CDN Link -->
      <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
@@ -12,51 +12,52 @@
      <script src="style.js"></script>
 </head>
 <style>
-     .upper {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-     }
+.upper {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
 
-     .upper-f {
+.upper-f {
 
-          display: flex;
-          flex-direction: row;
-          align-items: inherit;
+     display: flex;
+     flex-direction: row;
+     align-items: inherit;
 
 
-     }
+}
 
-     .profile_name {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-around;
-          font-family: 'Poppins', sans-serif;
-          color: #eef3f7;
-     }
+.profile_name {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     font-family: 'Poppins', sans-serif;
+     color: #eef3f7;
+}
 
-     .profile_name p {
-          margin-right: 10px;
-          font-family: 'Poppins', sans-serif;
-          color: #eef3f7;
-     }
+.profile_name p {
+     margin-right: 10px;
+     font-family: 'Poppins', sans-serif;
+     color: #eef3f7;
+}
 
-     .profile_name i {
-          margin-right: 10px;
-          font-family: 'Poppins', sans-serif;
-          color: #eef3f7;
-          cursor: pointer;
-     }
+.profile_name i {
+     margin-right: 10px;
+     font-family: 'Poppins', sans-serif;
+     color: #eef3f7;
+     cursor: pointer;
+}
 
-     .input-field input,textarea {
-          width: -webkit-fill-available;
+.input-field input,
+textarea {
+     width: -webkit-fill-available;
 
-     }
+}
 </style>
 
 <body>
      <div class="sidebar close">
-     <ul class="nav-links">
+          <ul class="nav-links">
                <li>
                     <div class="iocn-link">
                          <a href="/Final/admindashboard/admindashboard.php">
@@ -178,7 +179,7 @@
                     <div class="upper">
                          <div class="upper-f">
                               <i class='bx bx-menu'></i>
-                              <span class="text">Blood  Donation Management System</span>
+                              <span class="text">Blood Donation Management System</span>
                          </div>
                          <div class="uppfer-s">
                               <div class="profile_name" style="
@@ -199,34 +200,39 @@
                <div class="container" style="
                      margin-bottom: 10%;                     margin-top: 3%;
 ">
-                    <header>Make An Announcement</header>
-                    <form name="registrationForm" action="addcampaign.php" method="post" onsubmit="return validateForm()">
+                    <header>Make An Campaign</header>
+                    <form name="registrationForm" action="addcampaign.php" method="post"
+                         onsubmit="return validateForm()">
                          <div class="form first">
                               <div class="details personal">
 
 
                                    <div class="input-field">
-                                   <label>Campaign Name</label>
-                                   <input class="form-control" type="text" placeholder="Enter Campaign's Name" name="cname" required>
-                                                                 </div>
+                                        <label>Campaign Name</label>
+                                        <input class="form-control" type="text" placeholder="Enter Campaign's Name"
+                                             name="cname" required>
+                                   </div>
                                    <div class="input-field">
-                                   <label>Organizer Name</label>
-                                   <input class="form-control" type="text" placeholder="Enter Organizer's Name" name="oname" required>
+                                        <label>Organizer Name</label>
+                                        <input class="form-control" type="text" placeholder="Enter Organizer's Name"
+                                             name="oname" required>
                                    </div>
 
                                    <div class="input-field">
-                                   <label>Contact Number</label>
-                                            <input class="form-control" placeholder="9876543210" type="number" name="phn" required>
+                                        <label>Contact Number</label>
+                                        <input class="form-control" placeholder="9876543210" type="number" name="phn"
+                                             required>
                                    </div>
 
                                    <div class="input-field">
-                                   <label>Campaign Date</label>
-                                            <input class="form-control" type="date" name="cdate" required>
+                                        <label>Campaign Date</label>
+                                        <input class="form-control" type="date" name="cdate" required>
                                    </div>
 
                                    <div class="input-field">
-                                   <label>Description</label>
-                                            <textarea class="form-control" type="text" rows="4" name="descp" required></textarea>
+                                        <label>Description</label>
+                                        <textarea class="form-control" type="text" rows="4" name="descp"
+                                             required></textarea>
                                    </div>
 
 
@@ -260,12 +266,12 @@
 
      </section>
      <script>
-          let sidebar = document.querySelector(".sidebar");
-          let sidebarBtn = document.querySelector(".bx-menu");
-          console.log(sidebarBtn);
-          sidebarBtn.addEventListener("click", () => {
-               sidebar.classList.toggle("close");
-          });
+     let sidebar = document.querySelector(".sidebar");
+     let sidebarBtn = document.querySelector(".bx-menu");
+     console.log(sidebarBtn);
+     sidebarBtn.addEventListener("click", () => {
+          sidebar.classList.toggle("close");
+     });
      </script>
 </body>
 

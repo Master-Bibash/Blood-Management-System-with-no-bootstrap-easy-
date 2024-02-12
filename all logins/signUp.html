@@ -54,39 +54,43 @@ nav .logo {
      width: 80px;
 }
 </style>
+</style>
 <script>
      function validateForm() {
-         var name = document.forms["registrationForm"]["name"].value;
-         var password = document.forms["registrationForm"]["password"].value;
-         var email = document.forms["registrationForm"]["email"].value;
-         
-         // Validate name field (not empty)
-         if (name === "") {
-             alert("Name must be filled out");
-             return false;
-         }
- 
-         // Validate password field (at least 6 characters)
-         if (password.length < 6) {
-             alert("Password must be at least 6 characters long");
-             return false;
-         }
- 
-         // Validate email field (simple check for email format)
-         if (!isValidEmail(email)) {
-             alert("Invalid email address");
-             return false;
-         }
- 
-         return true;
+          var name = document.forms["registrationForm"]["name"].value;
+          var password = document.forms["registrationForm"]["password"].value;
+          var email = document.forms["registrationForm"]["email"].value;
+
+          // Validate name field (not empty and does not contain numbers)
+          if (name === "") {
+               alert("Name must be filled out");
+               return false;
+          } else if (/\d/.test(name)) {
+               alert("Name cannot contain numbers");
+               return false;
+          }
+
+          // Validate password field (at least 6 characters)
+          if (password.length < 6) {
+               alert("Password must be at least 6 characters long");
+               return false;
+          }
+
+          // Validate email field (simple check for email format)
+          if (!isValidEmail(email)) {
+               alert("Invalid email address");
+               return false;
+          }
+
+          return true;
      }
- 
+
      // Function to check the email format
      function isValidEmail(email) {
-         var emailRegex = /\S+@\S+\.\S+/;
-         return emailRegex.test(email);
+          var emailRegex = /\S+@\S+\.\S+/;
+          return emailRegex.test(email);
      }
- </script>
+</script>
  
    
 </head>
@@ -104,10 +108,10 @@ nav .logo {
                          <span class="title">Personal</span>
                          <div class="fields">
 
-                              <div class="input-field">
-                                   <label for="username">User-Name :</label>
-                                   <input  placeholder="Harry Den" type="text" name="name" required>
-                              </div>
+                         <div class="input-field">
+                              <label for="username">User-Name :</label>
+                              <input placeholder="Harry Den" type="text" name="name" required>
+                         </div>
                               <div class="input-field">
                                    <label>Enter Password</label>
                                    <input placeholder="Password" type="password" name="password" required>
@@ -165,8 +169,45 @@ nav .logo {
                     </div>
                </div>
                <input class="btn btn-success" type="submit" value="Register Now">
-               <div class="login_link">Have An Account ?<a href="userlogin.html">Login</a></div>
+               <div class="login_link">Have An Account ?<a href=" userlogin.php">Login</a></div>
           </form>
      </div>
 </body>
+<script>
+     function validateForm() {
+          var name = document.forms["registrationForm"]["name"].value;
+          var password = document.forms["registrationForm"]["password"].value;
+          var email = document.forms["registrationForm"]["email"].value;
+
+          // Validate name field (not empty and does not contain numbers)
+          if (name === "") {
+               alert("Name must be filled out");
+               return false;
+          } else if (/\d/.test(name)) {
+               alert("Name cannot contain numbers");
+               return false;
+          }
+
+          // Validate password field (at least 6 characters)
+          if (password.length < 6) {
+               alert("Password must be at least 6 characters long");
+               return false;
+          }
+
+          // Validate email field (simple check for email format)
+          if (!isValidEmail(email)) {
+               alert("Invalid email address");
+               return false;
+          }
+
+          return true;
+     }
+
+     // Function to check the email format
+     function isValidEmail(email) {
+          var emailRegex = /\S+@\S+\.\S+/;
+          return emailRegex.test(email);
+     }
+</script>
+
 </html>
