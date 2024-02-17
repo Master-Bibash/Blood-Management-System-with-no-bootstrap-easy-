@@ -3,7 +3,7 @@
 
 <head>
      <meta charset="UTF-8">
-     <title> Blood   Management System</title>
+     <title> Blood Management System</title>
      <link rel="stylesheet" href="Sidebarstyle.css">
      <!-- Boxiocns CDN Link -->
      <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
@@ -12,55 +12,56 @@
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
      <!-- <script src="style.js"></script> -->
      <style>
-          .sidebar .nav-links li .sub-menu {
-  padding: 6px 6px 14px 80px;
-  margin-top: -10px;
-  background: #1d1b31;
-  display: none;
-}
-          table.customers {
-               margin-top: 2%;
-               border-collapse: collapse;
-               width: 100%;
-               border: 1px solid #ddd;
-               margin-bottom: 5%;
-          }
+     .sidebar .nav-links li .sub-menu {
+          padding: 6px 6px 14px 80px;
+          margin-top: -10px;
+          background: #1d1b31;
+          display: none;
+     }
 
-          table.customers th,
-          table.customers td {
-               padding: 10px;
-               text-align: left;
-               border-bottom: 1px solid #ddd;
-          }
+     table.customers {
+          margin-top: 2%;
+          border-collapse: collapse;
+          width: 100%;
+          border: 1px solid #ddd;
+          margin-bottom: 5%;
+     }
 
-          table.customers th {
-               background-color: #f2f2f2;
-          }
+     table.customers th,
+     table.customers td {
+          padding: 10px;
+          text-align: left;
+          border-bottom: 1px solid #ddd;
+     }
 
-          table.customers tr:nth-child(even) {
-               background-color: #f2f2f2;
-          }
+     table.customers th {
+          background-color: #f2f2f2;
+     }
 
-          table.customers tr:hover {
-               background-color: #ddd;
-          }
+     table.customers tr:nth-child(even) {
+          background-color: #f2f2f2;
+     }
 
-          button {
-               height: 35px;
-               width: 100%;
-               border-radius: 10px;
-               cursor: pointer;
-          }
+     table.customers tr:hover {
+          background-color: #ddd;
+     }
 
-          button a {
-               text-decoration: none;
-               color: black;
+     button {
+          height: 35px;
+          width: 100%;
+          border-radius: 10px;
+          cursor: pointer;
+     }
 
-          }
+     button a {
+          text-decoration: none;
+          color: black;
 
-          button a:hover {
-               color: red;
-          }
+     }
+
+     button a:hover {
+          color: red;
+     }
      </style>
 
 </head>
@@ -68,8 +69,8 @@
 
 <body>
 
-<div class="sidebar close">
-<ul class="nav-links">
+     <div class="sidebar close">
+          <ul class="nav-links">
                <li>
                     <div class="iocn-link">
                          <a href="/Final/admindashboard/admindashboard.php">
@@ -183,18 +184,18 @@
 
 
           </ul>
-  </div>
+     </div>
      <section class="home-section">
           <div class="home-content">
                <div class="header">
                     <i class='bx bx-menu'></i>
-                    <span class="text">Blood  Donation Management System</span>
+                    <span class="text">Blood Donation Management System</span>
                </div>
 
                <table class="customers" style="
     border: 1px solid #ddd;">>
                     <tr>
-                                                  <?php
+                         <?php
                          // Establish a database connection
                          $con = mysqli_connect("localhost", "root", "", "bin");
 
@@ -220,7 +221,7 @@
                                         <th>Contact</th>
                                         <th>Collection Date</th>
                                         <th>Available</th>
-                                        <th>Request Blood</th>
+                                        <th>Request</th>
                                    </tr>
                               </thead>
                               <tbody>
@@ -257,12 +258,12 @@
       ?>
      </section>
      <script>
-          let sidebar = document.querySelector(".sidebar");
-          let sidebarBtn = document.querySelector(".bx-menu");
-          console.log(sidebarBtn);
-          sidebarBtn.addEventListener("click", () => {
-               sidebar.classList.toggle("close");
-          });
+     let sidebar = document.querySelector(".sidebar");
+     let sidebarBtn = document.querySelector(".bx-menu");
+     console.log(sidebarBtn);
+     sidebarBtn.addEventListener("click", () => {
+          sidebar.classList.toggle("close");
+     });
      </script>
 
 

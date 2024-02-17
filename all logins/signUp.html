@@ -178,6 +178,31 @@ nav .logo {
           var name = document.forms["registrationForm"]["name"].value;
           var password = document.forms["registrationForm"]["password"].value;
           var email = document.forms["registrationForm"]["email"].value;
+           var dob = document.forms["registrationForm"]["dob"].value; // Retrieve dob value here
+
+          console.log("Name: ", name);
+          console.log("Password: ", password);
+          console.log("Email: ", email);
+          console.log("Date of Birth: ", dob);
+
+          // Validate age (must be 18 or older)
+          var today = new Date();
+          var birthDate = new Date(dob);
+          console.log("Today's date: ", today);
+          console.log("Birthdate: ", birthDate);
+
+          var age = today.getFullYear() - birthDate.getFullYear();
+          var m = today.getMonth() - birthDate.getMonth();
+          if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+               age--;
+          }
+          console.log("Age: ", age);
+
+          if (age < 18) {
+               alert("You must be 18 or older to register.");
+               return false;
+          }
+          
 
           // Validate name field (not empty and does not contain numbers)
           if (name === "") {
